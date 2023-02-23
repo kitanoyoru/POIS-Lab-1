@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "kitalab"
+version = "0.0.1"
+description = "POIS lab1"
+authors = [
+    "Alexandr Rutkovskij <kitanoyoru@protonmail.com>",
+]
+license = "MIT" 
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+flask = "^2.2.2"
+flask-restful = "^0.3.9"
+python-dotenv = "0.21.1"
+gevent = "^22.10.2"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+requests = "^2.23.0"
+
+[tool.black]
+# https://github.com/psf/black
+line-length = 88
+target_version = ['py38']
+exclude = '''
+(
+  /(
+    \.git
+    | \.mypy_cache
+    | \.pytest_cache
+    | htmlcov
+    | venv
+    | .venv
+  )/
+)
+'''
