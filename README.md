@@ -2,22 +2,26 @@
 
 ## Install
 
-First of all you need to clone this repo
+```bash
+git clone https://github.com/kitanoyoru/POIS-Lab-1.git
+```
 
 
 ### Using *poetry* tool
-
-Install deps
 
 ```bash
 cd lab1 && poetry install
 
 ```
-Run
 
+## Run
+
+### Using *poetry* tool
 ```bash
 cd lab1 && poetry run
 ```
+
+
 
 ## Dependencies
 
